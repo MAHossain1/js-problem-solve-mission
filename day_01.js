@@ -1,3 +1,13 @@
+/* 
+1. Remove Duplicates from an Array
+2. Merge and Sort Two Arrays
+Problem: Write a function that takes two arrays, merges them, and returns a sorted array.
+3. Find Intersection of Two Arrays
+Problem: Write a function that takes two arrays and returns a new array with the common elements.
+4. Array to Object
+Problem: Write a function that takes an array of arrays and converts it to an object where the first element is the key and the second is the value. 
+*/
+
 const missionJsProblemSolve = [1, 32, 2, 4, 5];
 
 // Problem: Write a function that takes an array of numbers and returns the sum of all numbers.
