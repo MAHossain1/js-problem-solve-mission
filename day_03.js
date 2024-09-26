@@ -92,7 +92,7 @@ const isAnagram = (str1, str2) => {
   return str1.split('').sort().join('') === str2.split('').sort().join('');
 };
 
-console.log(isAnagram('mama', 'kaka'));
+// console.log(isAnagram('mama', 'kaka'));
 
 //! Find Factorial: Write a function to find the factorial of a number n using recursion.
 
@@ -101,4 +101,21 @@ const factorial = n => {
   return n * factorial(n - 1);
 };
 
-console.log(factorial(3));
+// console.log(factorial(3));
+
+const reversedString = str => str.split(' ').reverse().join(' ');
+// console.log(reversedString('Abu Nayem amr sonar bangla'));
+
+const uniqeArray = arr => [...new Set(arr)];
+
+// console.log(
+//   uniqeArray(['Niyamot', 'Arman', 'Sajjadun', 'Mahabub', 'Pronob', 'Arman'])
+// );
+
+const mergeObjects = (obj1, obj2) => ({ ...obj1, ...obj2 });
+
+// console.log(mergeObjects({ name: 'amr' }, { quality: 'sonar' }));
+
+const currentDate = () => new Date().toISOString().split('T')[0];
+// const currentDate = () => new Date().toDateString();
+console.log(currentDate());
