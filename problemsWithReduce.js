@@ -113,3 +113,45 @@ const groupedByRole = users.reduce((acc, user) => {
 }, {});
 
 // console.log(groupedByRole);
+
+//!Problem: Given an array of products, each with a stock property, calculate the total number of items available in stock.
+
+const inventory = [
+  { product: 'Laptop', stock: 4 },
+  { product: 'Phone', stock: 10 },
+  { product: 'Tablet', stock: 6 },
+];
+
+const availableTotalProducts = inventory.reduce((total, item) => {
+  return total + item.stock;
+}, 0);
+
+// console.log(availableTotalProducts);
+
+//! Problem: Imagine you receive multiple responses from an API for user data, and you want to combine these into one object.
+
+const apiResponses = [
+  { name: 'Alice', age: 25 },
+  { location: 'NY', country: 'USA' },
+  { email: 'alice@example.com' },
+];
+
+const userProfile = apiResponses.reduce((acc, response) => {
+  return { ...acc, ...response };
+}, {});
+
+// console.log(userProfile);
+
+//! Problem: From a list of products, find the product with the highest price.
+
+const products = [
+  { name: 'Laptop', price: 1000 },
+  { name: 'Phone', price: 1500 },
+  { name: 'Tablet', price: 750 },
+];
+
+const expensiveProduct = products.reduce((max, product) => {
+  return product.price > max.price ? product : max;
+});
+
+console.log(expensiveProduct);
